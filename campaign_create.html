@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://v2.retargeter.com/" />
+<title>campaign_create</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">campaign_create</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>sms</td>
+	<td>username</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.floor(Math.random()*111111)}</td>
+	<td>x</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['x']+storedVars['username']</td>
+	<td>Rusername</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Rusername}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['x']+storedVars['username']+&quot;@mailinator.com&quot;</td>
+	<td>email</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${email}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>sshaar08</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=passphrase</td>
+	<td>welcome</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn-login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/dashboard/campaign/create/</td>
+	<td></td>
+</tr>
+<!--verifying elements-->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=website</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.row.m-bottom-5 &gt; label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=first_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=last_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=confirm_email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=company_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=phone</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=cc_num</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=ccv_num</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='cc_exp_month_chzn']/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='cc_exp_year_chzn']/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=address1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=address2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=city</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='state_chzn']/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=zip</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='country_chzn']/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=btn-create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.sidebar-block &gt; h3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>${Rusername}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=website</td>
+	<td>http://test.mailinator.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=first_name</td>
+	<td>testy</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=last_name</td>
+	<td>mc test</td>
+</tr>
+<!--figure out slider-->
+<tr>
+	<td>type</td>
+	<td>id=phone</td>
+	<td>3333333333</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=confirm_email</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=company_name</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cc_num</td>
+	<td>4111111111111111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ccv_num</td>
+	<td>320</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=cc_exp_month_chzn_o_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=cc_exp_year_chzn_o_5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=address1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=address1</td>
+	<td>street</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=address2</td>
+	<td>line 2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=city</td>
+	<td>high point</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='state_chzn']/a/div/b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=state_chzn_o_34</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=zip</td>
+	<td>27407</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='country_chzn']/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='country_chzn']/div/ul/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btn-create</td>
+	<td></td>
+</tr>
+<!--need cc for tesing on this demo-->
+</tbody></table>
+</body>
+</html>

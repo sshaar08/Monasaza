@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://v2.retargeter.com/" />
+<title>login page</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">login page</td></tr>
+</thead><tbody>
+<tr>
+	<td>setTimeout</td>
+	<td>60000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<!--Username-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//form[@id='email-login']/div/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td></td>
+	<td>Username</td>
+</tr>
+<!--PAssword-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//form[@id='email-login']/div[2]/input</td>
+	<td></td>
+</tr>
+<!--login button-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=btn-login</td>
+	<td></td>
+</tr>
+<!--Forgot Password-->
+<tr>
+	<td>assertText</td>
+	<td>id=btn-forgotpass</td>
+	<td>exact:Forgot your password?</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=btn-forgotpass</td>
+	<td></td>
+</tr>
+<!--Sign Up button-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Sign Up Now!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Sign Up Now!</td>
+	<td>Sign Up Now!</td>
+</tr>
+<!--header link-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=ReTargeter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=ReTargeter</td>
+	<td>ReTargeter</td>
+</tr>
+<!---->
+</tbody></table>
+</body>
+</html>

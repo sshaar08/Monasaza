@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://v2.retargeter.com/" />
+<title>registertest</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">registertest</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>sms</td>
+	<td>username</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.floor(Math.random()*111111)}</td>
+	<td>x</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['x']+storedVars['username']</td>
+	<td>Rusername</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Rusername}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['x']+storedVars['username']+&quot;@mailinator.com&quot;</td>
+	<td>email</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${email}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sign Up Now!</td>
+	<td></td>
+</tr>
+<!--verifying all elements Id is the name of element-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=passphrase</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=confirm_passphrase</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=firstname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=lastname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=confirm_email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=company</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=phone</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=website</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=a.chzn-single &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#lead_source_chzn &gt; a.chzn-single &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=cb_terms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=cb_malware</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=btn-register</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=FAQ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=support@retargeter.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.push.form-note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#marketingmaterial &gt; h3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=marketingmaterial</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='marketingmaterial']/div[2]/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=marketingmaterial</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='marketingmaterial']/div[3]/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=marketingmaterial</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>${Rusername}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=passphrase</td>
+	<td>welcome</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=confirm_passphrase</td>
+	<td>welcome</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=firstname</td>
+	<td>sammy</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>shaar</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=confirm_email</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=company</td>
+	<td>${Rusername}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=phone</td>
+	<td>3333333333</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=website</td>
+	<td>http://test.mailinator.com</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='industry_chzn']/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=industry_chzn_o_3</td>
+	<td>Consumer Fashion</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='lead_source_chzn']/a/div/b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=lead_source_chzn_o_1</td>
+	<td>From a search engine</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='submitfooter']/div/div/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='submitfooter']/div/div/input[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn-register</td>
+	<td></td>
+</tr>
+<!--registere button click here-->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='content']/div/div/div[2]/div/h1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyLocation</td>
+	<td>glob:*/dashboard/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='content']/div/div/div[2]/div/h1</td>
+	<td>Campaign Metrics</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='content']/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
